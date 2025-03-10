@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <title>Redirecionando...</title>
     <script>
-        window.open("https://wa.me/5511916601568?text=Frank+me+indicou", "_blank");
+        setTimeout(function() {
+            var url = "https://wa.me/5511916601568?text=Frank+me+indicou"; // Coloque o link para onde deseja redirecionar
+            window.location.href = "googlechrome://" + url.replace("https://", "");
+        }, 1000);
     </script>
 </head>
 <body>
-    <p>Se não abrir automaticamente, <a href="https://wa.me/5511916601568?text=Frank+me+indicou" target="_blank">clique aqui</a>.</p>
+    <p>Se não for redirecionado, <a href="https://wa.me/5511916601568?text=Frank+me+indicou" target="_blank">clique aqui</a>.</p>
 </body>
 </html>
-
